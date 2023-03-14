@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: max-content;
+}
+header{
+   background-color: navy;
+   position: fixed;
+   top: 0;
+   width: 100%;
+    text-align: right;
+    padding: 17px;
+    z-index: 99;
+}
+
+ul{
+   margin-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+nav ul li a{
+    list-style-type: none;
+    color: #f0f0f0;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+nav ul li a:hover{
+    opacity: 0.6;
+}
+
+
+
+
+
+
+main{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+ }
+
+ 
+ .aboutMe{
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding-top: 20px;
+    max-height: max-content;
+    text-align: center;
+    background-color: #e6e4fe;
+    overflow: hidden;
+ }
+
+
+ .backgroundImageProfile{
+   background-image: url('../public/images/background1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover; 
+   background-attachment: fixed;
+   padding: 10px;
+
+ }
+
+ .backgroundImageProfile h1, .backgroundImageProfile h3{
+   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+   color: white;
+ }
+ .profile{
+   max-height: min-content;
+   margin: 40px auto;
+   gap: 10px;
+   
+}
+
+.foto-profile{
+   border-radius: 50%;
+   background-color: navy;
+   margin: auto;
+   align-self: center;
+   width: 30%;
+   border: 3px solid white;
+   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+ }
+
+ .description-self{
+   margin-top: 20px;
+   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2) inset;
+   border-radius: 5px;
+   padding: 10px;
+ }
+
+
+ .containerProject{
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    background-color: #e6e4fe;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: max-content;
+
+    
+ }
+
+ .detailProjects{
+   padding-top: 60px;
+   display: grid;
+   margin: auto;
+   grid-template-rows: 1fr auto;
+   
+}
+
+.headlineProjects{
+  
+   align-self: center;
+}
+
+.projects{
+   max-width: 80%;
+   display: grid;
+   margin: 40px auto;
+   grid-template-rows: 1fr 1fr;
+   align-self: center;
+   gap: 20px;
+}
+
+ .container{
+   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   overflow: hidden;
+ }
+
+ .detailProject{
+   padding: 5px;
+ }
+
+ .titleProject{
+   text-decoration: underline;
+   margin: 5px auto;
+ }
+
+
+
+ #Contact{
+   min-height: 100vh;
+   background-color: #e6e4fe;
+    margin-bottom: 10px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+ }
+
+ #Contact > h3{
+   padding-top: 60px;
+ }
+
+ .buttonUp{
+    background-color: navy;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    
+    
+ }
+
+ .buttonUp a{
+    color: white;
+    text-decoration: none;
+ }
+
+ .buttonUp a:hover{
+    opacity: 0.6;
+ }
+ #Contact{
+    position: relative;
+ }
+
+ #Contact > ul > li > img{
+    padding: 5px;
+ }
+
+ #Contact > ul > li{
+    margin-top: 20px;
+    list-style-type: none;
+ }
+
+
+ #Contact > ul{
+    min-width:auto;
+    margin: 20px auto;
+ }
+
+ footer{
+   position: fixed;
+   z-index: 95;
+   width: 100%;
+   bottom: 0;
+    text-align: center;
+    background-color: navy;
+    color: #f0f0f0;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 300;
+ }
+
+
+ @media screen and (max-width : 660px){
+   nav{
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+
+   .ulNav {
+     z-index: 10;
+     background-color: rgba(0, 0, 128, 0.9);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+     border-radius: 5px;
+     min-width: 40%;
+     height: 100vh;
+     position: absolute;
+     left: 0;
+     text-align: center;
+     transform: translate(-350px, 0);
+     transition: transform 0.5s ease-in-out;
+     }
+     header nav ul{
+       padding: 30px 0;
+     }
+    header nav ul li{
+       display: block;
+       padding: 20px;
+     }
+     .open{
+       transform: translate(0, 0);
+     }
+   
+     .hamburger-menu{
+       color: white;
+       border: none;
+       display: block;
+       position: absolute;
+       top: 0;
+       left: 0;
+       padding: 5px 5px 0 5px;
+       z-index: 12;
+     }
+   }
+ @media screen and (min-width : 661px){
+   .hamburger-menu{
+     display: none;
+   }
+ }
+
+
+@media screen and (min-width: 850px){
+   .headlineProjects{
+      margin: auto;
+   }
+   .projects{
+      margin: 50px auto;
+      align-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-height: max-content;
+   }
+
+   .detailProjects{
+      justify-items: center;
+   }
+
+
+   .containerProject{
+      position: relative;
+   }
+}
